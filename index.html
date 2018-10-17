@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-success">
-      <a class="navbar-brand" href="#">        
+      <a class="navbar-brand" href="home">        
         <i class="fas fa-dice-six"></i>
         jGame</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,18 +22,36 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">PLAY</a>
+            <a class="nav-link" href="play">PLAY</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="hight-score">Highscore</a>
+            <a class="nav-link" href="high-scores">High Scores</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about">About</a>
           </li>
-
         </ul>
       </div>
     </nav>
+
+  <div class="container mt-3">
+    <div data-page="home">
+        <h1>Home</h1>
+        <a href="play" class="btn btn-block btn-success btn-lg">Play</a>
+        <a href="high-scores" class="btn btn-block btn-success btn-lg">High scores</a>
+        <a href="about" class="btn btn-block btn-success btn-lg">About</a>
+        </div>
+    <div data-page="play">
+    <h1>Play</h1>
+    </div>
+    <div data-page="high-scores">
+    <h1>High scores</h1>
+    </div>
+    <div data-page="about">
+    <h1>About</h1>
+    </div>
+  </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
